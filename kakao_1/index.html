@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 사이트</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script type="module" src="getUI.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary" id="navbar">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" id="search">
+          <button class="btn btn-outline-success" type="submit" id="search_submit">Search</button>
+          <button type="button" class="btn btn-movie_like_list" id="movie_like_list_btn">즐겨찾기</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+
+    <ul id="movie_ul">
+    </ul>
+  
+    <!-- 모달 -->
+    <div class="modal" id="movieModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="modalTitle"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" id="closeModal">Close</button>
+        </div>
+        <div class="modal-body" id="modal_body">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
